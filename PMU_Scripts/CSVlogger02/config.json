@@ -1,0 +1,12 @@
+{
+    "csvPath": "/mnt/usb0/PhasorLogs/",
+    "csvChannels": [0,1,2],
+    "csvInterval": 10,
+    "recvIP": "127.0.0.1",
+    "recvPort": 48605,
+    "recvIF": "",
+    "IS_ALL_GROUPS": "True",
+    "recMask": [0,1,2],
+    "allowDeletion": true,
+    "daysToKeep": 30
+}

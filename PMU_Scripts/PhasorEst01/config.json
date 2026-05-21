@@ -1,0 +1,8 @@
+{
+    "receiveIP": "239.16.1.102", 	
+    "receivePort": 48502, 
+    "sendIP": "127.0.0.1",
+    "sendPort": 48504,  
+    "estimationMethod": "leastsquareoffline", 
+    "estimationFrequency": 50
+}

@@ -1,0 +1,24 @@
+# OpenPMU e-IpDFT Implementation and Hardware CAD Models
+
+This repository contains the source code, MATLAB simulations, and 3D CAD models for the refinement of an open-source Phasor Measurement Unit (PMU) built on a Raspberry Pi and BeagleBone Black.
+
+This project introduces a dual-engine estimation architecture, allowing the PMU to run a baseline time-domain Least Squares Method (LSM) concurrently with an experimental frequency-domain Enhanced Interpolated Discrete Fourier Transform (e-IpDFT). The e-IpDFT algorithm utilizes a cross-language C++ and Python architecture (`ctypes`) to bypass garbage collection and achieve stable, real-time processing at 10 kHz to meet IEEE C37.118 P-Class standards. Read the full thesis paper for an in-depth mathematical breakdown of the algorithms, a detailed explanation of the embedded hardware constraints, and the complete performance analysis.
+
+### Academic Context
+This repository is the technical supplement to the Bachelor's thesis *"Comparative Analysis of Time-Domain and Frequency-Domain Phasor Estimation."*
+* **Author:** Haron Akram Ahmed Mohammed
+* **Supervisor:** Valgerður Jónsdóttir
+* **Institution:** KTH Royal Institute of Technology, Stockholm, Sweden
+* **Course:** EF112X VT26 Examensarbete inom elektroteknik, grundnivå
+* **Program:** Degree Programme in Electrical Engineering (CELTE)
+
+
+### Repository Structure
+* `/PMU_Scripts`: Contains the embedded Python and C++ modules deployed on the Raspberry Pi. This includes the dual data pipelines (01 and 02) for tracking both algorithms simultaneously.
+* `/OpenPMU-KTH-doc-main`: Contains the 3D CAD models for the physical PMU enclosures and supplementary documentation.
+* The `/MATLAB_Scripts` folder (which contains the IEEE C37.118 benchmarking suite and synthetic waveform generators) includes sensitive information that is actively being used in an ongoing thesis project. Therefore, it has been intentionally excluded from this repository and cannot be made public at this time.
+
+### Network and Security
+The PMU is designed to stream data over an encrypted tunnel using an **OpenVPN** server. OpenVPN establishes a secure, point-to-point connection that wraps the IEEE C37.118-2011 measurements in cryptographic protocols, ensuring data integrity and preventing unauthorized interception over the public internet. 
+
+Furthermore, local Uncomplicated Firewall (UFW) rules enforce strict IP whitelisting to safely route the baseline data stream to a wide-area openHistorian concentrator on the Nordic PMU data network, while completely isolating the experimental streams and administrative SSH access to the local KTH subnet.

@@ -1,0 +1,10 @@
+{
+    "logPathRoot": "/mnt/usb0/PerformanceLogs/",
+    "logInterval": 5,
+    "targets": {
+        "LSM_Algorithm": "PhasorEst01",
+        "eIpDFT_Algorithm": "PhasorEst02"
+    },
+    "allowDeletion": true,
+    "daysToKeep": 30
+}

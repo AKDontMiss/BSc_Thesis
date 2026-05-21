@@ -1,0 +1,4 @@
+# Ignore MATLAB Scripts (Contains sensitive/ongoing thesis data)
+MATLAB_Scripts/
+*.m
+*.mat

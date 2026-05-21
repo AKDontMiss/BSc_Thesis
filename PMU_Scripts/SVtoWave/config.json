@@ -1,0 +1,9 @@
+{
+    "wavePath": "/mnt/usb0/WaveLogs/", 
+    "recvIP": "239.16.1.102", 
+    "recvPort": 48502, 
+    "IS_ALL_GROUPS": "True",
+    "recMask": [0,1,2],
+    "allowDeletion": true,
+    "daysToKeep": 30
+}

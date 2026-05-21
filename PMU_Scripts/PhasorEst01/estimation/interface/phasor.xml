@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<OpenPMU>
+    <Format>Phasors</Format>
+    <Date>2015-06-30</Date>
+    <Time>10:18:07.460</Time>
+    <Frame>23</Frame>
+    <Algorithm>OpenPMU 6-Channel</Algorithm>
+    <Channels>3</Channels>
+    <Channel_0>
+        <Name>LSM_Va</Name>
+        <Type>V</Type>
+        <Phase>a</Phase>
+        <Range>275</Range>
+        <Mag>240.00001</Mag>
+        <Angle>18.4037490493</Angle>
+        <Freq>50.6909118201</Freq>
+        <ROCOF>0</ROCOF>
+    </Channel_0>
+    <Channel_1>
+        <Name>LSM_Vb</Name>
+        <Type>V</Type>
+        <Phase>b</Phase>
+        <Range>275</Range>
+        <Mag>240.00001</Mag>
+        <Angle>18.4037490493</Angle>
+        <Freq>50.6909118201</Freq>
+        <ROCOF>0</ROCOF>
+    </Channel_1>
+    <Channel_2>
+        <Name>LSM_Vc</Name>
+        <Type>V</Type>
+        <Phase>c</Phase>
+        <Range>275</Range>
+        <Mag>240.00001</Mag>
+        <Angle>18.4037490493</Angle>
+        <Freq>50.6909118201</Freq>
+        <ROCOF>0</ROCOF>
+    </Channel_2>
+</OpenPMU>

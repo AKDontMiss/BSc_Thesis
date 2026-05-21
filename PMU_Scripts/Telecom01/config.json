@@ -1,0 +1,13 @@
+{
+  "OPERATIONAL_MODE": "commanded",
+  "SPONTANEOUS_DESTINATION_IP": "130.237.44.204",
+  "SPONTANEOUS_DESTINATION_Port": 4713,
+  "SERVER_PORT_TCP": 4711,
+  "XML_UDP_Port": 48504,
+  "STN": "LSM_Stream",
+  "IDCODE": 101,
+  "FNOM": 1,
+  "REPORTING_RATE": 50,
+  "LogLevel": "warning",
+  "LogColored": "yes"
+}
