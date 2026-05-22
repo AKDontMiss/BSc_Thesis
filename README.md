@@ -1,17 +1,18 @@
-# OpenPMU e-IpDFT Implementation and Hardware CAD Models
+# OpenPMU e-IpDFT Implementation and Hardware CAD Models 
 
-This repository contains the source code, MATLAB simulations, and 3D CAD models for the refinement of an open-source Phasor Measurement Unit (PMU) built on a Raspberry Pi and BeagleBone Black.
+## 🎓 KTH Bachelor's Thesis: EF112X VT26 Examensarbete inom elektroteknik
 
-This project introduces a dual-engine estimation architecture, allowing the PMU to run a baseline time-domain Least Squares Method (LSM) concurrently with an experimental frequency-domain Enhanced Interpolated Discrete Fourier Transform (e-IpDFT). The e-IpDFT algorithm utilizes a cross-language C++ and Python architecture (`ctypes`) to bypass garbage collection and achieve stable, real-time processing at 10 kHz to meet IEEE C37.118 P-Class standards. Read the full thesis paper for an in-depth mathematical breakdown of the algorithms, a detailed explanation of the embedded hardware constraints, and the complete performance analysis.
+This repository contains the source code, the presentation slides, and 3D CAD models for the refinement of an open-source Phasor Measurement Unit (PMU) built on a Raspberry Pi and BeagleBone Black.
+
+This project introduces a dual-engine estimation architecture, allowing the PMU to run a baseline time-domain Least Squares Method (LSM) simultaneously with an experimental frequency-domain Enhanced Interpolated Discrete Fourier Transform (e-IpDFT). The e-IpDFT algorithm utilizes a cross-language C++ and Python architecture (`ctypes`) to bypass garbage collection and achieve stable, real-time processing at 10 kHz to meet IEEE C37.118 P-Class standards. Read the full thesis paper for an in-depth mathematical breakdown of the algorithms, a detailed explanation of the embedded hardware constraints, and the complete performance analysis found on the KTH DiVA Portal.
 
 ### Academic Context
-This repository is the technical supplement to the Bachelor's thesis *"Comparative Analysis of Time-Domain and Frequency-Domain Phasor Estimation."*
+This repository is the technical supplement to the Bachelor's thesis *"Comparative Analysis of Time-Domain and Frequency-Domain Phasor Estimation,"* conducted during the Spring 2026 semester.
 * **Author:** Haron Akram Ahmed Mohammed
-* **Supervisor:** Valgerður Jónsdóttir
+* **Supervisor:** Valgerður Jónsdóttir 
 * **Institution:** KTH Royal Institute of Technology, Stockholm, Sweden
 * **Course:** EF112X VT26 Examensarbete inom elektroteknik, grundnivå
 * **Program:** Degree Programme in Electrical Engineering (CELTE)
-
 
 ### Repository Structure
 * `/PMU_Scripts`: Contains the embedded Python and C++ modules deployed on the Raspberry Pi. This includes the dual data pipelines (01 and 02) for tracking both algorithms simultaneously.
